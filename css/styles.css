@@ -1,20 +1,57 @@
  .rating input[type="radio"] {
-      display: none;
-    }
+   display: none;
+ }
 
-    .rating label {
-      font-size: 4rem;
-      color: lightgray;
-      cursor: pointer;
-      transition: color 0.2s;
-      margin: 0 2px;
-    }
+ .rating label {
+   font-size: 4rem;
+   color: lightgray;
+   cursor: pointer;
+   transition: color 0.2s;
+   margin: 0 2px;
+ }
 
-    .rating input[type="radio"]:checked~label,
-    .rating label:hover,
-    .rating label:hover~label {
-      color: gold;
-    }
+ .rating input[type="radio"]:checked~label,
+ .rating label:hover,
+ .rating label:hover~label {
+   color: gold;
+ }
 
-    .col-pelicula { width: 75%; }
-  .col-promedio { width: 25%; text-align: center; }
+ .col-pelicula {
+   width: 75%;
+ }
+
+ .col-promedio {
+   width: 25%;
+   text-align: center;
+ }
+
+ .icono-editar {
+   font-size: 1.3rem;
+   margin-right: 0.3rem;
+   padding: 0px 16px;
+ }
+
+ .icono-borrar {
+   font-size: 1.3rem;
+   margin-right: 0.3rem;
+   padding: 0px 16px;
+ }
+
+ /* Quitar flechitas en Chrome, Safari, Edge */
+ input[type=number]::-webkit-outer-spin-button,
+ input[type=number]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ /* Quitar flechitas en Firefox */
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+
+ .celda-acciones {
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  gap: 0.8rem;              /* Espacio entre botones */
+}
